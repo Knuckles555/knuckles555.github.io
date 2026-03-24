@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<variable name="BackgroundVar">
+		<value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
+		<value condition="!Window.IsActive(Home) + !String.IsEmpty(Skin.String(SkinShortcut.BackgroundPath))">$INFO[Skin.String(SkinShortcut.BackgroundPath)]</value>
+		<value condition="Skin.HasSetting(UseCustomBackground) + Skin.String(CustomBackgroundPath)">$INFO[Skin.String(CustomBackgroundPath)]</value>
+		<value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
+	</variable>
+	<include name="fanartSpeed">
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),2)">FanartTimePerImage2</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),3)">FanartTimePerImage3</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),4)">FanartTimePerImage4</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),5)">FanartTimePerImage5</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),6)">FanartTimePerImage6</include>
+		<include condition="String.IsEmpty(Skin.String(FanartTimePerImage))">FanartTimePerImage7</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),8)">FanartTimePerImage8</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),9)">FanartTimePerImage9</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),10)">FanartTimePerImage10</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),15)">FanartTimePerImage15</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),20)">FanartTimePerImage20</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),30)">FanartTimePerImage30</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),60)">FanartTimePerImage60</include>
+		<include condition="String.IsEqual(Skin.String(FanartTimePerImage),90)">FanartTimePerImage90</include>
+	</include>
+	<include name="FanartTimePerImage2">
+		<timeperimage>4000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage3">
+		<timeperimage>5000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage4">
+		<timeperimage>6000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage5">
+		<timeperimage>7000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage6">
+		<timeperimage>8000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage7">
+		<timeperimage>9000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage8">
+		<timeperimage>10000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage9">
+		<timeperimage>11000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage10">
+		<timeperimage>12000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage15">
+		<timeperimage>15000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage20">
+		<timeperimage>20000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage30">
+		<timeperimage>30000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage60">
+		<timeperimage>60000</timeperimage>
+	</include>
+	<include name="FanartTimePerImage90">
+		<timeperimage>90000</timeperimage>
+	</include>
+	<include name="CommonBackground">
+		<!-- global background -->
+		<control type="multiimage">
+			<left>300</left>
+			<top>106</top>
+			<width>1000</width>
+			<height>508</height>
+			<imagepath background="true" fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[BackgroundVar]</imagepath>
+			<aspectratio>top</aspectratio>
+			<fadetime>600</fadetime>
+			<loop>yes</loop>
+			<include>fanartSpeed</include>
+			<include condition="Skin.HasSetting(RandomizeBackground)">RandomizeImages</include>
+			<visible>![Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] | [Window.IsVisible(MovieInformation) + !Skin.HasSetting(HideWindowedTrailer)] | Window.IsActive(TVChannels)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>Background-Home.png</texture>
+	   </control>
+	</include>
+</includes>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">300</defaultcontrol>
+	<controls>
+		    <control type="image">
+			    <posx>0</posx>
+			    <posy>0</posy>
+			    <width>1280</width>
+			    <height>720</height>
+			    <texture>Background.png</texture>
+		      </control>
+			 <control type="group">
+				 <left>0</left>
+				 <top>105</top>
+				<control type="list" id="211">
+			    <include>Window_OpenClose_Left_Panel_Animation</include>
+				    <top>23</top>
+					<width>435</width>
+					<height>476</height>
+					<itemgap>5</itemgap>
+					<pagecontrol>31</pagecontrol>
+					<onleft>304</onleft>
+					<onright>300</onright>
+					<onup>211</onup>
+					<ondown>308</ondown>
+					<itemlayout height="47" width="242">
+					<control type="image">
+						<posx>0</posx>
+						<posy>5</posy>
+						<width>280</width>
+						<height>45</height>
+						<texture>Button_Side_NoFocus.png</texture>
+					 </control>
+				    <control type="image">
+						<posx>22</posx>
+						<posy>18</posy>
+						<width>23</width>
+						<height>23</height>
+					    <texture>home-button.png</texture>
+					 </control>
+					<control type="label">
+						<posx>60</posx>
+						<posy>12</posy>
+						<width>190</width>
+					    <height>35</height>
+						<font>font12</font>
+						<textcolor>grey2</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+					  </control>
+					 <control type="image">
+						<posx>0</posx>
+						<posy>50</posy>
+						<width>222</width>
+						<height>4</height>
+					    <texture>Home-Menu-Back-Divider.png</texture>
+					  </control>
+					 </itemlayout>
+					<focusedlayout height="47" width="242">
+				   <control type="image">
+						<posx>0</posx>
+						<posy>5</posy>
+						<width>280</width>
+						<height>45</height>
+						<texture>Button_Side_NoFocus.png</texture>
+					 </control>
+					<control type="image">
+						<posx>22</posx>
+						<posy>18</posy>
+						<width>23</width>
+						<height>23</height>
+						<texture>home-button.png</texture>
+					 </control>
+					<control type="image">
+						<posx>24</posx>
+						<posy>20</posy>
+						<width>17</width>
+						<height>17</height>
+						<texture>home-button-focus.gif</texture>
+						<visible>!ControlGroup(9000).HasFocus</visible>
+					 </control>
+					<control type="label">
+					   <posx>60</posx>
+					   <posy>12</posy>
+					   <width>190</width>
+					   <height>35</height>
+					   <font>font12</font>
+					   <textcolor>FFFFFFFF</textcolor>
+					   <align>left</align>
+					   <aligny>center</aligny>
+					   <label>[B]$INFO[ListItem.Label][/B]</label>
+				    </control>
+				   <control type="image">
+					  <posx>0</posx>
+					  <posy>50</posy>
+					  <width>222</width>
+					  <height>4</height>
+					  <texture>Home-Menu-Back-Divider.png</texture>
+					</control>
+				  </focusedlayout>
+				 </control>
+				 <control type="group">
+				   <top>-100</top>
+				   <include>Window_OpenClose_Right_Panel_Animation</include>
+				   <include>ContentPanel</include>
+				  <control type="label" id="500">
+				     <include>VisibleFadeEffect</include>
+					 <left>20</left>
+					 <top>-100</top>
+					 <width>1800</width>
+					 <height>60</height>
+					 <align>center</align>
+					 <aligny>center</aligny>
+					 <textcolor>white</textcolor>
+				   </control>
+				  <control type="grouplist" id="300">
+				  <include>Window_OpenClose_Right_Panel_Animation</include>
+					 <top>132</top>
+					 <left>300</left>
+					 <width>950</width>
+					 <height>780</height>
+					 <onleft>211</onleft>
+					 <onright>211</onright>
+					 <onup>300</onup>
+					 <ondown>10</ondown>
+					 <itemgap>0</itemgap>
+				  <control type="button" id="401">
+					  <width>950</width>
+					  <textcolor>grey2</textcolor>
+					  <focusedcolor>white</focusedcolor>
+					  <font>font12</font>
+					  <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					  <texturenofocus></texturenofocus>
+					  <label> $ADDON[script.skinshortcuts 32048]</label>
+				   </control>
+				  <control type="button" id="305">
+					  <width>950</width>
+					  <textcolor>grey2</textcolor>
+				      <focusedcolor>white</focusedcolor>
+					  <font>font12</font>
+					  <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					  <texturenofocus></texturenofocus>
+					  <label> $ADDON[script.skinshortcuts 32025]</label>
+					  <label2> $INFO[Container(211).ListItem.Label]</label2>
+			       </control>
+				  <control type="button" id="307">
+					  <width>950</width>
+					  <textcolor>grey2</textcolor>
+					  <focusedcolor>white</focusedcolor>
+					  <font>font12</font>
+					  <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					  <texturenofocus></texturenofocus>
+					  <label> $ADDON[script.skinshortcuts 32027] </label>
+					  <label2>   $INFO[Container(211).ListItem.Property(displaypath)]</label2>
+				   </control>
+				  <control type="button" id="310">
+					  <width>950</width>
+					  <textcolor>grey2</textcolor>
+					  <focusedcolor>white</focusedcolor>
+					  <font>font12</font>
+					  <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					  <texturenofocus></texturenofocus>
+					  <label> $ADDON[script.skinshortcuts 32045]</label>
+					  <label2> $INFO[Container(211).ListItem.Property(background)]</label2>
+					  <enable>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</enable>
+				  </control>
+				 <control type="button" id="405">
+					 <width>950</width>
+					 <textcolor>grey2</textcolor>
+					 <focusedcolor>white</focusedcolor>
+					 <font>font12</font>
+					 <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					 <texturenofocus></texturenofocus>
+					 <label> $ADDON[script.skinshortcuts 32072]</label>
+					 <visible>String.IsEqual(Window.Property("groupname"),mainmenu)</visible>
+				  </control>
+				  <control type="radiobutton" id="313">
+					 <width>950</width>
+					 <textcolor>grey2</textcolor>
+					 <focusedcolor>white</focusedcolor>
+					 <font>font12</font>
+					 <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					 <texturenofocus></texturenofocus>
+					 <label> $LOCALIZE[24021]</label>
+					 <selected>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</selected>
+				  </control>
+				 <control type="button" id="301">
+					 <width>950</width>
+					 <textcolor>grey2</textcolor>
+					 <focusedcolor>white</focusedcolor>
+					 <font>font12</font>
+					 <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					 <texturenofocus></texturenofocus>
+					 <label> $ADDON[script.skinshortcuts 32000]</label>
+				  </control>
+				 <control type="button" id="303">
+					 <width>950</width>
+					 <textcolor>grey2</textcolor>
+					 <focusedcolor>white</focusedcolor>
+					 <font>font12</font>
+					 <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					 <texturenofocus></texturenofocus>
+					 <label> $ADDON[script.skinshortcuts 32002]</label>
+				 </control>
+			    <control type="button" id="304">
+					 <width>950</width>
+					 <textcolor>grey2</textcolor>
+					 <focusedcolor>white</focusedcolor>
+					 <font>font12</font>
+					 <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					 <texturenofocus></texturenofocus>
+					 <label> $ADDON[script.skinshortcuts 32003]</label>
+				 </control>
+			    <control type="button" id="302">
+					 <width>950</width>
+					 <textcolor>grey2</textcolor>
+					 <focusedcolor>white</focusedcolor>
+					 <font>font12</font>
+					 <texturefocus colordiffuse="$INFO[Skin.String(color.900)]" border="7">list-focus.png</texturefocus>
+					 <texturenofocus></texturenofocus>
+					 <label> $ADDON[script.skinshortcuts 32001]</label>
+				  </control>
+			   </control>
+			 </control>
+			<control type="group">
+			  <posy>-105</posy>
+			  <control type="image">
+			     <posx>0</posx>
+			     <posy>0</posy>
+			     <width>1280</width>
+			     <height>128</height>
+			     <texture colordiffuse="$INFO[Skin.String(color.900)]">Header.png</texture>
+		      </control>
+			 <control type="label">
+		        <posx>110</posx>
+		        <posy>50</posy>
+		        <width>1060</width>
+		        <height>30</height>
+		        <font>font18</font>
+		        <textcolor>white</textcolor>
+		        <scroll>false</scroll>
+		        <align>left</align>
+		        <aligny>center</aligny>
+		        <label>Kodi media center - Skinshortcuts</label>
+		     </control>
+			</control>
+			<control type="group">
+			    <posx>150r</posx>
+			    <posy>-85</posy>
+			    <width>36</width>
+			    <height>32</height>
+			    <visible>system.getbool(input.enablemouse)</visible>
+			 <control type="image">
+				<description>Button background image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>106</width>
+				<height>32</height>
+				<texture border="3">black-back2.png</texture>
+			 </control>
+			 <control type="button">
+				 <posx>5</posx>
+				 <posy>0</posy>
+				 <width>32</width>
+				 <height>28</height>
+				 <label>31002</label>
+				 <align>right</align>
+				 <font>font10</font>
+				 <textoffsetx>50</textoffsetx>
+				 <textwidth>300</textwidth>
+				 <textcolor>00FFFFFF</textcolor>
+				 <focusedcolor>grey2</focusedcolor>
+				 <texturefocus>HeaderControlUpOneLevelFO.png</texturefocus>
+				 <texturenofocus>HeaderControlUpOneLevelNF.png</texturenofocus>
+				 <onleft>9000</onleft>
+				 <onright>9000</onright>
+				 <onup>9000</onup>
+				 <ondown>9000</ondown>
+				 <onclick>ParentDir</onclick>
+			  </control>
+			 <control type="button">
+				  <posx>37</posx>
+				  <posy>0</posy>
+				  <width>32</width>
+				  <height>28</height>
+				  <label>31003</label>
+				  <align>right</align>
+				  <font>font10</font>
+				  <textoffsetx>82</textoffsetx>
+				  <textwidth>300</textwidth>
+				  <textcolor>00FFFFFF</textcolor>
+				  <focusedcolor>grey2</focusedcolor>
+				  <texturefocus>HeaderControlBackFO.png</texturefocus>
+				  <texturenofocus>HeaderControlBackNF.png</texturenofocus>
+				  <onleft>9000</onleft>
+				  <onright>9000</onright>
+				  <onup>9000</onup>
+				  <ondown>9000</ondown>
+				  <onclick>PreviousMenu</onclick>
+			   </control>
+			  <control type="button">
+				 <posx>69</posx>
+				 <posy>0</posy>
+				 <width>32</width>
+				 <height>28</height>
+				 <label>31004</label>
+				 <align>right</align>
+				 <font>font10</font>
+				 <textoffsetx>114</textoffsetx>
+				 <textwidth>300</textwidth>
+				 <textcolor>00FFFFFF</textcolor>
+				 <focusedcolor>grey2</focusedcolor>
+				 <texturefocus>HeaderControlHomeFO.png</texturefocus>
+				 <texturenofocus>HeaderControlHomeNF.png</texturenofocus>
+				 <onleft>9000</onleft>
+				 <onright>9000</onright>
+				 <onup>9000</onup>
+				 <ondown>9000</ondown>
+				 <onclick>ActivateWindow(Home)</onclick>
+			 </control>
+		  </control>
+	   </control>
+	</controls>
+</window>

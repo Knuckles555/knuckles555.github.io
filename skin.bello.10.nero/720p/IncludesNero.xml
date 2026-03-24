@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+	<variable name="darkpulse">
+	    <value condition="String.IsEqual(Skin.String(PulseColor),Blue)">special://skin/extras/neropulse/blue_dark_pulse.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),bronze)">special://skin/extras/neropulse/bronze_dark_pulse.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Green)">special://skin/extras/neropulse/green_dark_pulse.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Midnight)">special://skin/extras/neropulse/midnite_dark_pulse.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Cyan)">special://skin/extras/neropulse/cyan_dark_pulse.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Pink)">special://skin/extras/neropulse/pink_dark_pulse.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Red)">special://skin/extras/neropulse/red_dark_pulse.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Colors)">special://skin/extras/neropulse/bello_colors_pulse.png</value>
+		<value>special://skin/extras/neropulse/blue_dark_pulse.png</value>
+	</variable>
+	<variable name="darkpulsediffuse">
+		<value condition="String.IsEqual(Skin.String(PulseColor),Bello)">DD000000</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Pink)">99000000</value>
+		<value>EE000000</value>
+	</variable>
+	<variable name="lightpulse">
+		<value condition="String.IsEqual(Skin.String(PulseColor),Midnight)">special://skin/extras/neropulse/light_pulse_gray.png</value>
+		<value condition="String.IsEqual(Skin.String(PulseColor),Blue) | String.IsEqual(Skin.String(PulseColor),Bronze) |  String.IsEqual(Skin.String(PulseColor),Green) | String.IsEqual(Skin.String(PulseColor),cyan) | String.IsEqual(Skin.String(PulseColor),Pink) | String.IsEqual(Skin.String(PulseColor),Red) | String.IsEqual(Skin.String(PulseColor),Colors)">special://skin/extras/neropulse/light_pulse_blk.png</value>
+		<value>special://skin/extras/neropulse/light_pulse_blk.png</value>
+	</variable>
+    <!-- Pulse Includes -->
+	<include name="PULSE">
+		<!-- Fade pulse when in widgets -->
+		<control type="group" description="Static Pulse">
+			<include>HomeMenu_Submenu_HiddenAnimation</include>
+			<visible>Skin.HasSetting(HomeMenuAnimation)</visible>
+			<!-- DARK PULSE -->
+			<top>40</top>
+			<control type="image">
+				<height>720</height>
+				<width>1280</width>
+				<texture>$VAR[darkpulse]</texture>
+			</control>
+			<!-- LIGHT PULSE -->
+			<control type="image">
+				<height>720</height>
+				<width>1280</width>
+				<texture>$VAR[lightpulse]</texture>
+			</control>
+			<!-- DARKSPOT -->
+			<control type="image">
+				<visible>!Skin.HasSetting(ClassicHomeMenu)</visible>
+				<left>-480</left>
+				<height>720</height>
+				<width>1280</width>
+				<texture colordiffuse="$VAR[darkpulsediffuse]">windows/bg/darkspot.png</texture>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<!-- DARKSPOT - CLASSIC MENU -->
+			<control type="image">
+				<visible>Skin.HasSetting(ClassicHomeMenu)</visible>
+				<left>0</left>
+				<height>720</height>
+				<width>1280</width>
+				<texture colordiffuse="$VAR[darkpulsediffuse]">windows/bg/darkspot.png</texture>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+		</control>
+		<control type="group" description="Animated Pulse">
+		    <!-- Fade pulse when in widgets -->
+			<include>HomeMenu_Submenu_HiddenAnimation</include>
+			<visible>!Skin.HasSetting(HomeMenuAnimation)</visible>
+			<!-- DARK PULSE -->
+			<top>40</top>
+			<control type="image">
+				<height>720</height>
+				<width>3280</width>
+				<texture>$VAR[darkpulse]</texture>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+					<effect type="slide" start="-2000,0" end="0,0" time="30350" />
+					<effect type="slide" start="0,0" end="-2000,0" time="30350" delay="30350"/>
+				</animation>
+			</control>
+			<!-- LIGHT PULSE -->
+			<control type="image">
+				<height>720</height>
+				<width>3280</width>
+				<texture>$VAR[lightpulse]</texture>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+					<effect type="slide" start="0,0" end="-2000,0" time="30350" />
+					<effect type="slide" start="0,0" end="2000,0" time="30350" delay="30350"/>
+				</animation>
+			</control>
+			<!-- DARKSPOT -->
+			<control type="image">
+				<visible>!Skin.HasSetting(ClassicHomeMenu)</visible>
+				<left>-800</left>
+				<height>720</height>
+				<width>1920</width>
+				<texture colordiffuse="$VAR[darkpulsediffuse]">windows/bg/darkspot.png</texture>
+				<align>center</align>
+				<aligny>center</aligny>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+					<effect type="fade" start="30" end="94" time="5000"/>
+					<effect type="fade" start="94" end="30" time="5000" delay="30350"/>
+				</animation>
+			</control>
+			<!-- DARKSPOT - CLASSIC MENU -->
+			<control type="image">
+				<visible>Skin.HasSetting(ClassicHomeMenu)</visible>
+				<left>-333</left>
+				<height>720</height>
+				<width>1920</width>
+				<texture colordiffuse="$VAR[darkpulsediffuse]">windows/bg/darkspot.png</texture>
+				<align>center</align>
+				<aligny>center</aligny>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+					<effect type="fade" start="30" end="94" time="5000"/>
+					<effect type="fade" start="94" end="30" time="5000" delay="30350"/>
+				</animation>
+			</control>
+		</control>
+	</include>
+	<!-- Pulse Radio Button with Swatch -->
+	<include name="SettingsPulseRadioButton">
+		<description>Pulse Radio Button with Swatch offset</description>
+		<width>784</width>
+		<height>50</height>
+		<font>FontSize_22</font>
+		<texturefocus border="1">windows/settings/settings_right_fo.png</texturefocus>
+		<texturenofocus></texturenofocus>
+		<textoffsetx>50</textoffsetx>
+		<textwidth>700</textwidth>
+		<radioposx>754</radioposx>
+	</include>
+	<!-- Pulse Color Swatch -->
+	<include name="PulseColorSwatch">
+		<param name="SwatchColor" />
+		<definition>
+			<control type="image">
+				<left>10</left>
+				<top>14</top>
+				<width>26</width>
+				<height>24</height>
+				<texture colordiffuse="$PARAM[SwatchColor]">windows/bg/white.png</texture>
+			</control>
+		</definition>
+	</include>
+	
+	<include name="NeroPulseSettings">	
+		<!-- Blue -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FF1856B4" />
+			</include>
+			<control type="radiobutton" id="9810">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31438]</label>
+				<onclick>Skin.SetString(PulseColor,Blue)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FF1856B4)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FF6EBFF1)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FF6EBFF1)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FF6EBFF1)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FF6EBFF1)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Blue) | String.IsEmpty(Skin.String(PulseColor))</selected>
+				<onup>9817</onup>
+				<ondown>9811</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>	
+		<!-- Bronze -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FFCD7F32" />
+			</include>
+			<control type="radiobutton" id="9811">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31471]</label>
+				<onclick>Skin.SetString(PulseColor,Bronze)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FF8C7A3A)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FFD0A15A)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FFD0A15A)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FFD0A15A)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FFD0A15A)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Bronze)</selected>
+				<onup>9810</onup>
+				<ondown>9812</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>
+		<!-- Green -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FF507B00" />
+			</include>
+			<control type="radiobutton" id="9812">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31440]</label>
+				<onclick>Skin.SetString(PulseColor,Green)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FF507B00)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FF507B00)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FF507B00)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FF507B00)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FF507B00)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Green)</selected>
+				<onup>9811</onup>
+				<ondown>9813</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>
+		<!-- Midnight (Gray) -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FF4D4D4D" />
+			</include>
+			<control type="radiobutton" id="9813">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31441]</label>
+				<onclick>Skin.SetString(PulseColor,Midnight)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FF4D4D4D)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FF7C858C)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FF7C858C)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FF7C858C)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FF7C858C)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Midnight)</selected>
+				<onup>9812</onup>
+				<ondown>9814</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>
+		<!-- Cyan -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FF0E7A73" />
+			</include>
+			<control type="radiobutton" id="9814">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31472]</label>
+				<onclick>Skin.SetString(PulseColor,Cyan)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FF0E7A73)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FF39C6D6)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FF39C6D6)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FF39C6D6)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FF39C6D6)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Cyan)</selected>
+				<onup>9813</onup>
+				<ondown>9815</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>
+		<!-- Pink -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FFFF00C6" />
+			</include>
+			<control type="radiobutton" id="9815">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31443]</label>
+				<onclick>Skin.SetString(PulseColor,Pink)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FFFF00C6)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FFE600B8)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FFE600B8)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FFE600B8)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FFE600B8)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Pink)</selected>
+				<onup>9814</onup>
+				<ondown>9816</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>
+		<!-- Red -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FFB80034" />
+			</include>
+			<control type="radiobutton" id="9816">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31444]</label>
+				<onclick>Skin.SetString(PulseColor,Red)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FFFF3A3A)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FFF02626)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FFF02626)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FFF02626)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FFF02626)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Red)</selected>
+				<onup>9815</onup>
+				<ondown>9817</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>
+		<!-- Colors (Rainbow) -->
+		<control type="group">
+			<width>784</width>
+			<height>50</height>
+			<include content="PulseColorSwatch">
+				<param name="SwatchColor" value="FFCB2BFF" />
+			</include>
+			<control type="radiobutton" id="9817">
+				<include>SettingsPulseRadioButton</include>
+				<label>$LOCALIZE[31445]</label>
+				<onclick>Skin.SetString(PulseColor,Colors)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BG.GlobalColor,FFCB2BFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Textures.GlobalColor,FFCB2BFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(Text.GlobalColor,FFCB2BFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(MainMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubMenuFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsUnfocused.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(TopMenuButtonsFocused.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomProfileIcon.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(BottomDayDate.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SubmenuIndicator.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(LibraryTotals.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherIconLogo.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(WeatherTextLabel.GlobalColor,99FFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenLogo.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(SplashScreenText.GlobalColor,FFFFFFFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(OsdFocusButton.GlobalColor,FFCB2BFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(DialogBusyButton.GlobalColor,FFCB2BFF)</onclick>
+				<onclick condition="!Skin.HasSetting(DisablePulseBGLink)">Skin.SetString(RssTextFeed.GlobalColor,FFFFFFFF)</onclick>
+				<selected>String.IsEqual(Skin.String(PulseColor),Colors)</selected>
+				<onup>9816</onup>
+				<ondown>9810</ondown>
+				<onleft>6000</onleft>
+				<onright>6000</onright>
+			</control>
+		</control>
+	</include>
+
+</includes>

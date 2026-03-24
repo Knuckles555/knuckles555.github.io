@@ -1,0 +1,6 @@
+# Old build output
+public/
+
+# Python
+__pycache__/
+*.pyc

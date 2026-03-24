@@ -1,0 +1,1141 @@
+﻿# Translators:
+# Nessus85100 <nessus85100@hotmail.com>, 2019
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Skins\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2022-11-26 00:50+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Dutch <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-bello/nl_nl/>\n"
+"Language: nl_nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
+
+msgctxt "Addon Summary"
+msgid "A GUI for Kodi Media Center"
+msgstr "Een grafische gebruikersinterface voor Kodi Media Center"
+
+msgctxt "Addon Description"
+msgid "Bello 10 Nero is a modernised revival of the Bello Nero design, featuring additional features and integrated into the Bello 10 framework. full credit to the original developers Nessus,eQUIV,iCanuck"
+msgstr "Bello 10 Nero is een gemoderniseerde heropleving van het Bello Nero-ontwerp, met extra functies en geïntegreerd in het Bello 10-framework. Volledige erkenning voor de oorspronkelijke ontwikkelaars Nessus, eQUIV en iCanuck."
+
+msgctxt "Addon Disclaimer"
+msgid "Mouse, Games and touchscreen use are not supported with Bello 10 Nero."
+msgstr "Het gebruik van muis, games en touchscreen wordt niet ondersteund met Bello 10 Nero."
+
+msgctxt "#31000"
+msgid "Live TV"
+msgstr "Live Televisie"
+
+msgctxt "#31001"
+msgid "TV Guide"
+msgstr "TV Gids"
+
+msgctxt "#31002"
+msgid "TV Shows"
+msgstr "TV series"
+
+msgctxt "#31003"
+msgid "Aired"
+msgstr "Uitgezonden"
+
+msgctxt "#31004"
+msgid "Premiere"
+msgstr "Première"
+
+msgctxt "#31005"
+msgid "Track Number"
+msgstr "Tracknummer"
+
+msgctxt "#31006"
+msgid "Working..."
+msgstr "Bezig..."
+
+msgctxt "#31007"
+msgid "Please Wait..."
+msgstr "Even geduld..."
+
+msgctxt "#31008"
+msgid "System auto shutdown in"
+msgstr "Systeem wordt automatisch afgesloten over"
+
+msgctxt "#31009"
+msgid "Context Menu"
+msgstr "Contextmenu"
+
+msgctxt "#31010"
+msgid "Customize Home Menu"
+msgstr "Startmenu aanpassen"
+
+msgctxt "#31011"
+msgid "Recommended by TMDB"
+msgstr "Aanbevolen door TMDB"
+
+msgctxt "#31012"
+msgid "More"
+msgstr "Meer"
+
+msgctxt "#31013"
+msgid "Home Menu"
+msgstr "Startmenu"
+
+msgctxt "#31014"
+msgid "Created by"
+msgstr "Gemaakt door"
+
+msgctxt "#31015"
+msgid "Similar to"
+msgstr "Vergelijkbaar met"
+
+msgctxt "#31016"
+msgid "File Manager"
+msgstr "Bestandsbeheer"
+
+msgctxt "#31017"
+msgid "Not Installed or Disabled"
+msgstr "Niet geïnstalleerd of uitgeschakeld"
+
+msgctxt "#31018"
+msgid "Trailers"
+msgstr "Trailers"
+
+msgctxt "#31019"
+msgid "Directed by"
+msgstr "Geregisseerd door"
+
+msgctxt "#31020"
+msgid "Written by"
+msgstr "Geschreven door"
+
+msgctxt "#31021"
+msgid "Music Library"
+msgstr "Muziekbibliotheek"
+
+msgctxt "#31022"
+msgid "Music Files"
+msgstr "Muziekbestanden"
+
+msgctxt "#31023"
+msgid "Loading Info..."
+msgstr "Informatie laden..."
+
+msgctxt "#31024"
+msgid "of"
+msgstr "van"
+
+msgctxt "#31025"
+msgid "Item"
+msgstr "Item"
+
+msgctxt "#31026"
+msgid "Scrolling..."
+msgstr "Scrollen..."
+
+msgctxt "#31027"
+msgid "Memory Usage"
+msgstr "Geheugen Gebruik"
+
+msgctxt "#31028"
+msgid "Items"
+msgstr "Items"
+
+msgctxt "#31030"
+msgid "AM"
+msgstr "AM"
+
+msgctxt "#31031"
+msgid "PM"
+msgstr "PM"
+
+msgctxt "#31032"
+msgid "User Login"
+msgstr "Gebruikerslogin"
+
+msgctxt "#31033"
+msgid "Channel Group"
+msgstr "Kanaal groep"
+
+msgctxt "#31034"
+msgid "Teletext"
+msgstr "Teletekst"
+
+msgctxt "#31035"
+msgid "Searching subtitles"
+msgstr "Zoeken naar ondertitels"
+
+msgctxt "#31037"
+msgid "Change Rating"
+msgstr "Waardering wijzigen"
+
+msgctxt "#31038"
+msgid "Esc"
+msgstr "Esc"
+
+msgctxt "#31041"
+msgid "Creator"
+msgstr "Maker"
+
+msgctxt "#31042"
+msgid "Welcome to Bello 10 Nero"
+msgstr "Welkom bij Bello 10 Nero"
+
+msgctxt "#31043"
+msgid "Thank you for using Bello 10 Nero"
+msgstr "Bedankt voor het gebruik van Bello 10 Nero"
+
+msgctxt "#31044"
+msgid "Starting"
+msgstr "Starten"
+
+msgctxt "#31045"
+msgid "Exiting"
+msgstr "Afsluiten"
+
+msgctxt "#31046"
+msgid "Powering off"
+msgstr "Uitschakelen"
+
+msgctxt "#31047"
+msgid "Suspending"
+msgstr "Pauzestand"
+
+msgctxt "#31048"
+msgid "Hibernating"
+msgstr "Slaapstand"
+
+msgctxt "#31049"
+msgid "Rebooting"
+msgstr "Opnieuw opstarten"
+
+msgctxt "#31050"
+msgid "Logging off"
+msgstr "Afmelden"
+
+msgctxt "#31080"
+msgid "Slide"
+msgstr "Dia"
+
+msgctxt "#31081"
+msgid "Gallery"
+msgstr "Gallerij"
+
+msgctxt "#31082"
+msgid "3D Wall"
+msgstr "3D-muur"
+
+msgctxt "#31083"
+msgid "Wall"
+msgstr "Muur"
+
+msgctxt "#31084"
+msgid "Posters"
+msgstr "Posters"
+
+msgctxt "#31085"
+msgid "Thumbnails"
+msgstr "Miniaturen"
+
+msgctxt "#31086"
+msgid "Banner List"
+msgstr "Bannerlijst"
+
+msgctxt "#31087"
+msgid "VideoWall"
+msgstr "Videomuur"
+
+msgctxt "#31088"
+msgid "List Wall"
+msgstr "Lijstmuur"
+
+msgctxt "#31089"
+msgid "Showtime"
+msgstr "Speeltijd"
+
+msgctxt "#31090"
+msgid "Tiles"
+msgstr "Tegels"
+
+msgctxt "#31091"
+msgid "Supported Add-ons"
+msgstr "Ondersteunde Add-ons"
+
+msgctxt "#31093"
+msgid "Quick Navigation Widgets"
+msgstr "Snelle navigatiewidgets"
+
+msgctxt "#31094"
+msgid "Movies Widgets"
+msgstr "Filmwidgets"
+
+msgctxt "#31095"
+msgid "TV Shows Widgets"
+msgstr "TV-seriewidgets"
+
+msgctxt "#31096"
+msgid "Music Widgets"
+msgstr "Muziekwidgets"
+
+msgctxt "#31097"
+msgid "RSS Video Feed Widget"
+msgstr "RSS-videofeedwidget"
+
+msgctxt "#31098"
+msgid "Show Small Thumbs"
+msgstr "Kleine miniaturen tonen"
+
+msgctxt "#31099"
+msgid "Show Big Thumbs"
+msgstr "Grote miniaturen tonen"
+
+msgctxt "#31100"
+msgid "Thumb Glow"
+msgstr "Miniatuurglans"
+
+msgctxt "#31101"
+msgid "Enable Autocompletion on K/B [COLOR=55white](Requires plugin.program.autocompletion)[/COLOR]"
+msgstr "Automatisch aanvullen op toetsenbord inschakelen [COLOR=55white](Vereist plugin.program.autocompletion)[/COLOR]"
+
+msgctxt "#31102"
+msgid "Hide Now Playing Video Info"
+msgstr "Video-info tijdens afspelen verbergen"
+
+msgctxt "#31103"
+msgid "Hide Now Playing Music Info"
+msgstr "Muziekinfo tijdens afspelen verbergen"
+
+msgctxt "#31104"
+msgid "OSD Music Layout"
+msgstr "OSD-muzieklayout"
+
+msgctxt "#31105"
+msgid "OSD Video Layout"
+msgstr "OSD-videolayout"
+
+msgctxt "#31106"
+msgid "SeekBar Layout"
+msgstr "Zoekbalk-layout"
+
+msgctxt "#31107"
+msgid "Simple"
+msgstr "Eenvoudig"
+
+msgctxt "#31108"
+msgid "System Music Files"
+msgstr "Systeemmuziekbestanden"
+
+msgctxt "#31109"
+msgid "Current Playlist"
+msgstr "Huidige afspeellijst"
+
+msgctxt "#31110"
+msgid "OSD layout has changed."
+msgstr "OSD-layout is gewijzigd."
+
+msgctxt "#31111"
+msgid "Budget"
+msgstr "Budget"
+
+msgctxt "#31112"
+msgid "Revenue"
+msgstr "Opbrengst"
+
+msgctxt "#31113"
+msgid "Awards"
+msgstr "Prijzen"
+
+msgctxt "#31114"
+msgid "Crew"
+msgstr "Crew"
+
+msgctxt "#31115"
+msgid "Options Menu"
+msgstr "Optiemenu"
+
+msgctxt "#31116"
+msgid "Views Menu"
+msgstr "Weergavemenu"
+
+msgctxt "#31124"
+msgid "Flashing Lights"
+msgstr "Knipperende lichten"
+
+msgctxt "#31125"
+msgid "Edit Info"
+msgstr "Informatie bewerken"
+
+msgctxt "#31126"
+msgid "Highlight Colour"
+msgstr "Markeringskleur"
+
+msgctxt "#31127"
+msgid "Highlighted Text Colour"
+msgstr "Kleur van gemarkeerde tekst"
+
+msgctxt "#31128"
+msgid "Background Colours"
+msgstr "Achtergrondkleuren"
+
+msgctxt "#31129"
+msgid "Reset all colours to default"
+msgstr "Alle kleuren herstellen naar standaard"
+
+msgctxt "#31130"
+msgid "Disable Fanart in all sections"
+msgstr "Fanart in alle secties uitschakelen"
+
+msgctxt "#31131"
+msgid "Show Only on Home Screen"
+msgstr "Alleen op startscherm tonen"
+
+msgctxt "#31132"
+msgid "Hide Background Video"
+msgstr "Achtergrondvideo verbergen"
+
+msgctxt "#31137"
+msgid "Enable Notifications"
+msgstr "Meldingen inschakelen"
+
+msgctxt "#31139"
+msgid "Enable Add-ons Notifications"
+msgstr "Meldingen van add-ons inschakelen"
+
+msgctxt "#31140"
+msgid "Enable Weather Alerts Notifications"
+msgstr "Meldingen van weerwaarschuwingen inschakelen"
+
+msgctxt "#31141"
+msgid "Lyrics Add-on"
+msgstr "Songtekst Add-on"
+
+msgctxt "#31142"
+msgid "Required Add-on"
+msgstr "Vereiste add-on"
+
+msgctxt "#31143"
+msgid "Enable NextAired Info & TV Guide for TV Shows [COLOR=55white](Requires script.tv.show.next.aired)[/COLOR]"
+msgstr "NextAired-info & TV-gids voor TV-series inschakelen [COLOR=55white](Vereist script.tv.show.next.aired)[/COLOR]"
+
+msgctxt "#31151"
+msgid "Show RSS feed in whole skin"
+msgstr "RSS-feed in de hele skin tonen"
+
+msgctxt "#31153"
+msgid "Enable login screen"
+msgstr "Inlogscherm inschakelen"
+
+msgctxt "#31156"
+msgid "Manage Video Views"
+msgstr "Videoweergaves beheren"
+
+msgctxt "#31157"
+msgid "Manage Music Views"
+msgstr "Muziekweergaves beheren"
+
+msgctxt "#31158"
+msgid "Views"
+msgstr "Weergaves"
+
+msgctxt "#31161"
+msgid "Hide home menu extra info"
+msgstr "Extra info in startmenu verbergen"
+
+msgctxt "#31162"
+msgid "Enable Kiosk Mode"
+msgstr "Kioskmodus activeren (geen zij menu's)"
+
+msgctxt "#31163"
+msgid "Cast info"
+msgstr "Castinformatie"
+
+msgctxt "#31164"
+msgid "Press DOWN for more info"
+msgstr "Druk op OMLAAG voor meer info"
+
+msgctxt "#31165"
+msgid "Ends"
+msgstr "Eindigt"
+
+msgctxt "#31166"
+msgid "Local subtitle available"
+msgstr "Lokale ondertitels beschikbaar"
+
+msgctxt "#31167"
+msgid "Settings Level:"
+msgstr "Instellingsniveau:"
+
+msgctxt "#31168"
+msgid "Reset Level"
+msgstr "Niveau herstellen"
+
+msgctxt "#31169"
+msgid "Reset Skin"
+msgstr "Skininstellingen Herstellen"
+
+msgctxt "#31200"
+msgid "My Smartish Movies"
+msgstr "Mijn Smartish-films"
+
+msgctxt "#31201"
+msgid "My Smartish TV Shows"
+msgstr "Mijn Smartish TV-series"
+
+msgctxt "#31202"
+msgid "My Smartish Music"
+msgstr "Mijn Smartish-muziek"
+
+msgctxt "#31203"
+msgid "HD Movies"
+msgstr "HD-films"
+
+msgctxt "#31204"
+msgid "Top 250 Movies"
+msgstr "Top 250 films"
+
+msgctxt "#31205"
+msgid "My Smartish TV Channels"
+msgstr "Mijn Smartish TV-kanalen"
+
+msgctxt "#31206"
+msgid "Next Aired TV Shows"
+msgstr "Volgende uitzendingen (TV-series)"
+
+msgctxt "#31207"
+msgid "Widget's Aspect Ratio"
+msgstr "Beeldverhouding van widget"
+
+msgctxt "#31208"
+msgid "Auto-Hide all Widgets"
+msgstr "Alle widgets automatisch verbergen"
+
+msgctxt "#31209"
+msgid "Use submenu as Widget"
+msgstr "Submenu als widget gebruiken"
+
+msgctxt "#31210"
+msgid "Recent"
+msgstr "Recente"
+
+msgctxt "#31211"
+msgid "Latest Movie"
+msgstr "Nieuwste film"
+
+msgctxt "#31212"
+msgid "Latest Episode"
+msgstr "Nieuwste aflevering"
+
+msgctxt "#31213"
+msgid "Latest Album"
+msgstr "Nieuwste album"
+
+msgctxt "#31214"
+msgid "Airing"
+msgstr "Uitzending"
+
+msgctxt "#31215"
+msgid "Next Airs"
+msgstr "Volgende uitzending"
+
+msgctxt "#31216"
+msgid "Last Aired"
+msgstr "Laatst uitgezonden"
+
+msgctxt "#31217"
+msgid "Wide Thumb"
+msgstr "Brede miniatuur"
+
+msgctxt "#31218"
+msgid "Landscape"
+msgstr "Panorama"
+
+msgctxt "#31219"
+msgid "Logo"
+msgstr "Logo"
+
+msgctxt "#31220"
+msgid "Extra Info"
+msgstr "Extra Info"
+
+msgctxt "#31221"
+msgid "Extra art"
+msgstr "Extra artwork"
+
+msgctxt "#31222"
+msgid "Latest Song"
+msgstr "Nieuwste nummer"
+
+msgctxt "#31223"
+msgid "Square"
+msgstr "Vierkant"
+
+msgctxt "#31228"
+msgid "at"
+msgstr "om"
+
+msgctxt "#31229"
+msgid "Last Updated"
+msgstr "Laatste Update"
+
+msgctxt "#31230"
+msgid "Data Provider"
+msgstr "Dataleverancier"
+
+msgctxt "#31231"
+msgid "Daily"
+msgstr "Dagelijks"
+
+msgctxt "#31233"
+msgid "Location"
+msgstr "Locatie"
+
+msgctxt "#31237"
+msgid "Popular People"
+msgstr "Populaire personen"
+
+msgctxt "#31238"
+msgid "No Shows airing today.[CR]Press LEFT to select different day."
+msgstr "Vandaag worden er geen series uitgezonden.[CR]Druk op LINKS om een andere dag te kiezen."
+
+msgctxt "#31239"
+msgid "Shows Listed"
+msgstr "Series vermeld"
+
+msgctxt "#31240"
+msgid "Shows Airing Today"
+msgstr "Series vandaag op tv"
+
+msgctxt "#31241"
+msgid "Recently Added Movies"
+msgstr "recent toegevoegde films"
+
+msgctxt "#31242"
+msgid "Recently Added TV Shows"
+msgstr "Recent toegevoegde TV-series"
+
+msgctxt "#31243"
+msgid "Recently Added Music"
+msgstr "Recent toegevoegde muziek"
+
+msgctxt "#31244"
+msgid "Kids Movies"
+msgstr "Kinderfilms"
+
+msgctxt "#31245"
+msgid "Kids TV Shows"
+msgstr "Kinderseries"
+
+msgctxt "#31246"
+msgid "TV Shows Airing Today"
+msgstr "TV-series vandaag op tv"
+
+msgctxt "#31247"
+msgid "Random Movies"
+msgstr "Willekeurige films"
+
+msgctxt "#31248"
+msgid "Random TV Shows"
+msgstr "Willekeurige TV-series"
+
+msgctxt "#31249"
+msgid "Random Albums"
+msgstr "Willekeurige albums"
+
+msgctxt "#31250"
+msgid "Coming Soon"
+msgstr "Binnenkort beschikbaar"
+
+msgctxt "#31251"
+msgid "Popular Movies"
+msgstr "Populaire films"
+
+msgctxt "#31252"
+msgid "Popular TV Shows"
+msgstr "Populaire TV-series"
+
+msgctxt "#31253"
+msgid "Oscars Winners"
+msgstr "Oscarwinnaars"
+
+msgctxt "#31254"
+msgid "Search on YouTube"
+msgstr "Zoeken op YouTube"
+
+msgctxt "#31255"
+msgid "RSS Video Feeds"
+msgstr "RSS-videofeeds"
+
+msgctxt "#31256"
+msgid "In Cinemas Now"
+msgstr "Nu in de bioscoop"
+
+msgctxt "#31257"
+msgid "Trending Movies"
+msgstr "Recent populaire films"
+
+msgctxt "#31258"
+msgid "Trending TV Shows"
+msgstr "Populaire TV-series"
+
+msgctxt "#31259"
+msgid "Random Artists"
+msgstr "Willekeurige artiesten"
+
+msgctxt "#31260"
+msgid "Movies In Progress"
+msgstr "Films in uitvoering"
+
+msgctxt "#31261"
+msgid "TV Shows In Progress"
+msgstr "TV-series in uitvoering"
+
+msgctxt "#31262"
+msgid "Music In Progress"
+msgstr "Muziek in uitvoering"
+
+msgctxt "#31263"
+msgid "Unwatched Movies"
+msgstr "Niet-bekeken films"
+
+msgctxt "#31264"
+msgid "Unwatched TV Shows"
+msgstr "Niet-bekeken TV-series"
+
+msgctxt "#31265"
+msgid "Unwatched Episodes"
+msgstr "Niet-bekeken afleveringen"
+
+msgctxt "#31266"
+msgid "Top Rated Movies"
+msgstr "Top Gewaardeerde Films"
+
+msgctxt "#31267"
+msgid "Top Rated TV Shows"
+msgstr "Top gewaardeerde TV-series"
+
+msgctxt "#31268"
+msgid "Random Episodes"
+msgstr "Willekeurige afleveringen"
+
+msgctxt "#31269"
+msgid "On-Air TV Shows"
+msgstr "TV-series in uitzending"
+
+msgctxt "#31270"
+msgid "Movie Facts"
+msgstr "Filmfeitjes"
+
+msgctxt "#31271"
+msgid "TV Show Facts"
+msgstr "TV-seriefeitjes"
+
+msgctxt "#31272"
+msgid "Died"
+msgstr "Overleden"
+
+msgctxt "#31273"
+msgid "Photos"
+msgstr "Foto's"
+
+msgctxt "#31274"
+msgid "Random Songs"
+msgstr "Willekeurige nummers"
+
+msgctxt "#31275"
+msgid "Most Watched TV Shows"
+msgstr "Meest bekeken TV-series"
+
+msgctxt "#31276"
+msgid "Most Anticipated TV Shows"
+msgstr "Meest verwachte TV-series"
+
+msgctxt "#31277"
+msgid "Most Watched Movies"
+msgstr "Meest bekeken films"
+
+msgctxt "#31278"
+msgid "Most Anticipated Movies"
+msgstr "Meest verwachte films"
+
+msgctxt "#31279"
+msgid "Box Office"
+msgstr "Kassa-opbrengst"
+
+msgctxt "#31280"
+msgid "Most Popular Movies"
+msgstr "Populairste films"
+
+msgctxt "#31281"
+msgid "Update Info"
+msgstr "Info bijwerken"
+
+msgctxt "#31282"
+msgid "Reset & Update Info"
+msgstr "Herstellen en info bijwerken"
+
+msgctxt "#31300"
+msgid "Muted"
+msgstr "Gedempt"
+
+msgctxt "#31301"
+msgid "Playing"
+msgstr "Afspelen"
+
+msgctxt "#31302"
+msgid "Paused"
+msgstr "Gepauzeerd"
+
+msgctxt "#31303"
+msgid "Rewinding:"
+msgstr "Terugspoelen:"
+
+msgctxt "#31304"
+msgid "Forwarding:"
+msgstr "Vooruitspoelen:"
+
+msgctxt "#31305"
+msgid "Finish Time:"
+msgstr "Eindtijd:"
+
+msgctxt "#31306"
+msgid "Customize Background"
+msgstr "Aangepaste achtergrond"
+
+msgctxt "#31307"
+msgid "Enable Visualization"
+msgstr "Visualisatie inschakelen"
+
+msgctxt "#31308"
+msgid "Visualization Type"
+msgstr "Visualisatietype"
+
+msgctxt "#31309"
+msgid "Visualization Presets"
+msgstr "Visualisatievoorinstellingen"
+
+msgctxt "#31310"
+msgid "Visualization Settings"
+msgstr "Visualisatie instellingen"
+
+msgctxt "#31311"
+msgid "Enable Music Fanart SlideShow"
+msgstr "Muziekfanart-diavoorstelling inschakelen"
+
+msgctxt "#31312"
+msgid "Enable Artist SlideShow"
+msgstr "Artiestendiavoorstelling inschakelen"
+
+msgctxt "#31313"
+msgid "Animated Backgrounds"
+msgstr "Geanimeerde achtergronden"
+
+msgctxt "#31314"
+msgid "Hide Diffuse Colors"
+msgstr "Diffuse kleuren verbergen"
+
+msgctxt "#31315"
+msgid "Hide Scrolling Titles"
+msgstr "Scrollende titels verbergen"
+
+msgctxt "#31316"
+msgid "Now Playing"
+msgstr "Huidige Onderdeel"
+
+msgctxt "#31317"
+msgid "Continue watching ?"
+msgstr "Verder kijken?"
+
+msgctxt "#31318"
+msgid "Next Episode will start in..."
+msgstr "Volgende aflevering start over..."
+
+msgctxt "#31319"
+msgid "Still watching ?"
+msgstr "Kijk je nog steeds?"
+
+msgctxt "#31320"
+msgid "UpNext will stop in..."
+msgstr "UpNext stopt over..."
+
+msgctxt "#31321"
+msgid "Video decoder"
+msgstr "Videodecoder"
+
+msgctxt "#31322"
+msgid "Pixel format"
+msgstr "Pixelformaat"
+
+msgctxt "#31323"
+msgid "CPU usage"
+msgstr "CPU-gebruik"
+
+msgctxt "#31324"
+msgid "Cache level"
+msgstr "Cacheniveau"
+
+msgctxt "#31350"
+msgid "Available Groups"
+msgstr "Beschikbare groepen"
+
+msgctxt "#31351"
+msgid "Add Group"
+msgstr "Groep Toevoegen"
+
+msgctxt "#31352"
+msgid "Rename Group"
+msgstr "Groep Hernoemen"
+
+msgctxt "#31353"
+msgid "Delete Group"
+msgstr "Groep Verwijderen"
+
+msgctxt "#31354"
+msgid "Hide Group"
+msgstr "Groep verbergen"
+
+msgctxt "#31355"
+msgid "Unhide Group"
+msgstr "Groep weergeven"
+
+msgctxt "#31356"
+msgid "Similar"
+msgstr "Vergelijkbaar"
+
+msgctxt "#31357"
+msgid "Timer"
+msgstr "Timer"
+
+msgctxt "#31358"
+msgid "Small List"
+msgstr "Kleine lijst"
+
+msgctxt "#31374"
+msgid "Quick Navigation"
+msgstr "Snelle navigatie"
+
+msgctxt "#31375"
+msgid "Disable Quick Navigation"
+msgstr "Snelle navigatie uitschakelen"
+
+msgctxt "#31376"
+msgid "Quick Navigation Items"
+msgstr "Items voor snelle navigatie"
+
+msgctxt "#31377"
+msgid "Manage Custom Items"
+msgstr "Aangepaste items beheren"
+
+msgctxt "#31378"
+msgid "Custom Item"
+msgstr "Aangepast item"
+
+msgctxt "#31379"
+msgid "Custom Items"
+msgstr "Aangepaste items"
+
+msgctxt "#31381"
+msgid "Search Video Library"
+msgstr "Videobibliotheek doorzoeken"
+
+msgctxt "#31382"
+msgid "Search Music Library"
+msgstr "Muziekbibliotheek doorzoeken"
+
+msgctxt "#31383"
+msgid "Search Add-ons"
+msgstr "Add-ons zoeken"
+
+msgctxt "#31384"
+msgid "Search TheMovieDB"
+msgstr "In TheMovieDB zoeken"
+
+msgctxt "#31385"
+msgid "Search Actors & Directors"
+msgstr "Acteurs en regisseurs zoeken"
+
+msgctxt "#31386"
+msgid "People"
+msgstr "Personen"
+
+msgctxt "#31409"
+msgid "Choose from a variety of settings and customization options to make \"Bello 10 Nero\" fit your needs and taste."
+msgstr "Kies uit diverse instellingen en aanpassingsopties om Bello 10 Nero” aan jouw wensen en smaak aan te passen."
+
+msgctxt "#31410"
+msgid "With Kodi you can have several profiles and the auto login option if the login screen is disabled."
+msgstr "Met Kodi kun je meerdere profielen gebruiken en de optie voor automatisch inloggen als het inlogscherm is uitgeschakeld."
+
+msgctxt "#31431"
+msgid "You haven't added any items to Favorites yet.[CR]Highlight an item, and choose \"Add to favorites\" from the context menu."
+msgstr "Je hebt nog geen items toegevoegd aan Favorieten.[CR]Selecteer een item en kies „Toevoegen aan favorieten” in het contextmenu."
+
+msgctxt "#31432"
+msgid "Please check your Weather service settings."
+msgstr "Controleer je instellingen voor de weerservice."
+
+msgctxt "#31433"
+msgid "All Skin Settings will revert back to their default state.[CR]Are you sure you want to proceed ?"
+msgstr "Alle skininstellingen worden teruggezet naar de standaardwaarden.[CR]Weet je zeker dat je wilt doorgaan?"
+
+msgctxt "#31434"
+msgid "Autohide All Widgets"
+msgstr "Altijd alle widgets weergeven"
+
+msgctxt "#31435"
+msgid "Pulse Themes"
+msgstr "Pulse-thema’s"
+
+msgctxt "#31436"
+msgid "Disable Pulse Animation"
+msgstr "Pulse-animatie uitschakelen"
+
+msgctxt "#31437"
+msgid "Disable background color"
+msgstr "Achtergrondkleur uitschakelen"
+
+msgctxt "#31438"
+msgid "Blue Theme"
+msgstr "Blauw thema"
+
+msgctxt "#31439"
+msgid "Bello(Purple) Theme"
+msgstr "Bello (paars) thema"
+
+msgctxt "#31440"
+msgid "Green Theme"
+msgstr "Groen thema"
+
+msgctxt "#31441"
+msgid "Midnight(Gray) Theme"
+msgstr "Midnight (grijs) thema"
+
+msgctxt "#31442"
+msgid "Nero(Dark Gray) Theme"
+msgstr "Nero (donkergrijs) thema"
+
+msgctxt "#31443"
+msgid "Pink Theme"
+msgstr "Roze thema"
+
+msgctxt "#31444"
+msgid "Red Theme"
+msgstr "Rood thema"
+
+msgctxt "#31445"
+msgid "Colors(Rainbow) Theme"
+msgstr "Colors (regenboog) thema"
+
+msgctxt "#31446"
+msgid "Fullscreen Widget Auto-Scroll"
+msgstr "Automatisch scrollen van widget op volledig scherm"
+
+msgctxt "#31447"
+msgid "Fullscreen Widget"
+msgstr "Widget op volledig scherm"
+
+msgctxt "#31448"
+msgid "Hide widget plot/description"
+msgstr "Plot/beschrijving van widget verbergen"
+
+msgctxt "#31449"
+msgid "Skin - Shortcuts"
+msgstr "Skin – snelkoppelingen"
+
+msgctxt "#31450"
+msgid "Disable Widget Clearlogo"
+msgstr "Widget-Clearlogo uitschakelen"
+
+msgctxt "#31451"
+msgid "Main Background Transparency"
+msgstr "Transparantie van hoofdachtergrond"
+
+msgctxt "#31452"
+msgid "Transparency"
+msgstr "Transparantie"
+
+msgctxt "#31453"
+msgid "Change Colours Within Your Pulse Selected Theme"
+msgstr "Kleuren wijzigen binnen het geselecteerde Pulse-thema"
+
+msgctxt "#31454"
+msgid "Main Menu Unfocused Text Colour"
+msgstr "Tekstkleur hoofdmenu (niet geselecteerd)"
+
+msgctxt "#31455"
+msgid "Main Menu Focused Text Colour"
+msgstr "Tekstkleur hoofdmenu (geselecteerd)"
+
+msgctxt "#31456"
+msgid "Sub Menu Unfocused Text Colour"
+msgstr "Tekstkleur submenu (niet geselecteerd)"
+
+msgctxt "#31457"
+msgid "Sub Menu Focused Text Colour"
+msgstr "Tekstkleur submenu (geselecteerd)"
+
+msgctxt "#31458"
+msgid "Top Menu Logo Colour"
+msgstr "Logokleur bovenmenu"
+
+msgctxt "#31459"
+msgid "Top Menu Buttons Unfocused"
+msgstr "Knoppen bovenmenu (niet geselecteerd)"
+
+msgctxt "#31460"
+msgid "Top Menu Buttons Focused"
+msgstr "Knoppen bovenmenu (geselecteerd)"
+
+msgctxt "#31461"
+msgid "Bottom Profile Icon Colour"
+msgstr "Kleur profielpictogram onderaan"
+
+msgctxt "#31462"
+msgid "Bottom Day/Date Colour"
+msgstr "Kleur dag/datum onderaan"
+
+msgctxt "#31463"
+msgid "Submenu/Widget Indicator"
+msgstr "Submenu-/widgetindicator"
+
+msgctxt "#31464"
+msgid "Library Totals Colour"
+msgstr "Kleur bibliotheektotalen"
+
+msgctxt "#31465"
+msgid "Weather Icons Colour"
+msgstr "Kleur weerpictogrammen"
+
+msgctxt "#31466"
+msgid "Weather Text Labels Colour"
+msgstr "Kleur weertekstwaanduidingen"
+
+msgctxt "#31467"
+msgid "SplashScreen Logo Colour"
+msgstr "Logokleur opstartscherm"
+
+msgctxt "#31468"
+msgid "SplashScreen Text Labels Colour"
+msgstr "Tekstkleur opstartscherm"
+
+msgctxt "#31469"
+msgid "OSD Focused Button Colour"
+msgstr "Kleur geselecteerde OSD-knop"
+
+msgctxt "#31470"
+msgid "Dialog Busy Colour"
+msgstr "Kleur bezet-indicator dialoog"
+
+msgctxt "#31471"
+msgid "Bronze Theme"
+msgstr "Brons thema"
+
+msgctxt "#31472"
+msgid "Cyan Theme"
+msgstr "Cyaan thema"
+
+msgctxt "#31473"
+msgid "RSS Feed Colour"
+msgstr "Kleur van RSS-feed"

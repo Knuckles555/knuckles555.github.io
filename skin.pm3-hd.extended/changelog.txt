@@ -1,0 +1,13 @@
+- Redone the keyboard,added extra keys for omega use
+- Added menu shortcuts for main menu 
+- Added a submenu and data folders for menus shortcuts
+- Added shortcut menu's background option
+- Added Skin Color Themes
+- Changed the way the default background works
+  it will now only display on the main menu interface,
+- Changed episodes callings to only call fanart based list views
+- Fixed PVR guide and channel bugs 
+- Added a buffering value cache level for live tv
+- Changed navigation settings defaults / Also added more foundation settings
+- Fixed context menu grouping issues / Changed progress overlays in list views
+- Increased item gaps and focus positions in all list views for touch scrolling 

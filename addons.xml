@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.knuckles555" name="Knuckles Repository" version="1.0.6" provider-name="Knuckles">
+    <extension point="xbmc.addon.repository" name="Knuckles Repository">
+        <dir>
+            <info compressed="false">https://knuckles555.github.io/addons.xml</info>
+            <datadir zip="true">https://knuckles555.github.io/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Knuckles Repository</summary>
+        <description lang="en_GB">A repository for Knuckles skins.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="skin.bello.10.nero" version="1.0.6" name="Bello 10 Nero" provider-name="Knuckles">
+  <requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.skinshortcuts" version="2.0.3" />
+		<import addon="script.embuary.helper" version="2.0.8" />
+		<import addon="plugin.video.themoviedb.helper" optional="true" version="4.4.14" />
+		<import addon="resource.images.languageflags.colour" optional="true" version="0.0.4" />
+		<import addon="resource.images.weathericons.outline" optional="true" version="0.0.6" />
+	</requires>
+	<extension point="xbmc.gui.skin" effectslowdown="0.75" debugging="false">
+		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>Creative Commons Attribution-NonCommercial-Share Alike 4.0 International License</license>
+    <forum />
+    <email />
+    <source />
+    <news />
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>
+    <summary lang="af">&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;apos;n GUI vir Kodi Media Sentrum</summary>
+    <summary lang="af_ZA">'n GUI vir Kodi Media Sentrum</summary>
+    <summary lang="ar">واجهة رسومية لمركز الوسائط Kodi</summary>
+    <summary lang="ar_SA">واجهة رسومية لمركز الوسائط Kodi</summary>
+    <summary lang="bg">Потребителски интерфейс за Kodi</summary>
+    <summary lang="bg_BG">Потребителски интерфейс за Kodi</summary>
+    <summary lang="ca">Una interfície gràfica per a l&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;apos;Kodi</summary>
+    <summary lang="ca_ES">Una interfície gràfica per a l'Kodi</summary>
+    <summary lang="da">En GUI til Kodi Media Center</summary>
+    <summary lang="da_DK">En grafisk brugerflade til Kodi Media Center</summary>
+    <summary lang="de">Ein GUI für das Kodi Media Center</summary>
+    <summary lang="de_DE">Ein GUI für das Kodi Media Center</summary>
+    <summary lang="el">Ένα Γραφικό Περιβάλλον για το Κέντρο Πολυμέσων Kodi</summary>
+    <summary lang="en">A GUI for Kodi Media Center</summary>
+    <summary lang="en_AU">A GUI for Kodi Media Centre</summary>
+    <summary lang="en_NZ">A GUI for Kodi Media Centre</summary>
+    <summary lang="en_US">A GUI for Kodi Media Center</summary>
+    <summary lang="es">Una interfaz gráfica para Kodi</summary>
+    <summary lang="es_ES">Una interfaz gráfica para Kodi</summary>
+    <summary lang="et_EE">Kodi meediakeskuse kasutajaliides</summary>
+    <summary lang="fr">Un thème pour Kodi Media Center</summary>
+    <summary lang="fr_CA">Une IUG pour le centre multimédia Kodi</summary>
+    <summary lang="fr_FR">Un thème pour Kodi Media Center</summary>
+    <summary lang="gl">Un GUI para Centro de Medios Kodi</summary>
+    <summary lang="gl_ES">Un GUI para Centro de Medios Kodi</summary>
+    <summary lang="he">ממשק משתמש עבור Kodi מדיה סנטר</summary>
+    <summary lang="he_IL">ממשק משתמש עבור Kodi מדיה סנטר</summary>
+    <summary lang="hu">Felszín az  Kodi Média centerhez</summary>
+    <summary lang="hu_HU">Felszín az Kodi Média centerhez</summary>
+    <summary lang="id_ID">GUI untuk Sentra Media Kodi</summary>
+    <summary lang="it">Un Interfaccia per Kodi Media Center</summary>
+    <summary lang="it_IT">Una GUI per Kodi Media Center</summary>
+    <summary lang="ja">Kodi メディアセンター用 GUI</summary>
+    <summary lang="ja_JP">Kodi メディアセンター用 GUI</summary>
+    <summary lang="ko">Kodi Media Center를 위한 그래픽 사용자 인터페이스</summary>
+    <summary lang="ko_KR">Kodi Media Center를 위한 그래픽 사용자 인터페이스</summary>
+    <summary lang="lt">Kodi media centro GUI</summary>
+    <summary lang="lt_LT">Kodi media centro GUI</summary>
+    <summary lang="ms">GUI untuk Pusat Media Kodi</summary>
+    <summary lang="ms_MY">GUI untuk Pusat Media Kodi</summary>
+    <summary lang="nl">Een gebruikersinterface voor Kodi Media Center </summary>
+    <summary lang="nl_NL">Een gebruikersinterface voor Kodi Media Center</summary>
+    <summary lang="pl">Interfejs użytkownika dla Kodi Media Center</summary>
+    <summary lang="pl_PL">Interfejs użytkownika dla Kodi Media Center</summary>
+    <summary lang="pt">Uma Interface para o Centro de Média Kodi</summary>
+    <summary lang="pt_BR">Uma interface gráfica para o Kodi Media Center</summary>
+    <summary lang="pt_PT">Uma Interface para o Centro de Média Kodi</summary>
+    <summary lang="ru">Обложка для Kodi</summary>
+    <summary lang="ru_RU">Обложка для Kodi</summary>
+    <summary lang="sl">Uporabniški vmesnik za medijsko središče Kodi</summary>
+    <summary lang="sl_SI">Uporabniški vmesnik za medijsko središče Kodi</summary>
+    <summary lang="sv">Ett grafiskt användargränssnitt för Kodi</summary>
+    <summary lang="sv_SE">Ett grafiskt användargränssnitt för Kodi</summary>
+    <summary lang="th">ส่วนติดต่อผู้ใช้ สำหรับศูนย์รวมสื่อ Kodi</summary>
+    <summary lang="th_TH">ส่วนติดต่อผู้ใช้ สำหรับศูนย์รวมสื่อ Kodi</summary>
+    <summary lang="tr">Kodi Media Center İçin Arayüz</summary>
+    <summary lang="tr_TR">Kodi Media Center İçin Arayüz</summary>
+    <summary lang="zh">Kodi媒体中心的一个图形用户界面</summary>
+    <summary lang="zh_CN">Kodi媒体中心的一个图形用户界面</summary>
+    <summary lang="zh_TW">一個 Kodi 多媒體中心的圖形介面</summary>
+    <description lang="el_GR">Το Bello 10 Nero είναι μια εκσυγχρονισμένη αναβίωση του σχεδιασμού Bello Nero, με πρόσθετες λειτουργίες και ενσωματωμένο στο πλαίσιο του Bello 10. Πλήρη εύσημα στους αρχικούς δημιουργούς Nessus, eQUIV, iCanuck.</description>
+    <description lang="en">Bello 10 Nero is a modernised revival of the Bello Nero design, featuring additional features and integrated into the Bello 10 framework. full credit to the original developers Nessus,eQUIV,iCanuck</description>
+    <description lang="en_AU">Bello 10 Nero is a modernised revival of the Bello Nero design, featuring additional features and integrated into the Bello 10 framework. full credit to the original developers Nessus,eQUIV,iCanuck</description>
+    <description lang="en_NZ">Bello 10 Nero is a modernised revival of the Bello Nero design, featuring additional features and integrated into the Bello 10 framework. full credit to the original developers Nessus,eQUIV,iCanuck</description>
+    <description lang="en_US">Bello 10 Nero is a modernised revival of the Bello Nero design, featuring additional features and integrated into the Bello 10 framework. full credit to the original developers Nessus,eQUIV,iCanuck</description>
+    <description lang="es_ES">Bello 10 Nero es una versión modernizada del diseño Bello Nero, con funciones adicionales e integrada en el marco de Bello 10. Todo el crédito para los desarrolladores originales Nessus, eQUIV, iCanuck.</description>
+    <description lang="de_DE">Bello 10 Nero ist eine modernisierte Wiederbelebung des Bello-Nero-Designs, in das Bello-10-Framework integriert und mit zusätzlichen Funktionen versehen. Voller Dank an die ursprünglichen Entwickler Nessus, eQUIV, iCanuck.</description>
+	<description lang="fr_FR">Bello 10 Nero est une version modernisée du design Bello Nero, avec des fonctionnalités supplémentaires et intégrée au framework Bello 10. Tout le crédit revient aux développeurs originaux Nessus, eQUIV, iCanuck.</description>
+	<description lang="is_IS">Bello 10 Nero er nútímavædd endurvakning á Bello Nero hönnuninni, samþætt í Bello 10 rammann með viðbótareiginleikum. Full þökk til upprunalegu þróunaraðilanna Nessus, eQUIV, iCanuck.</description>
+    <description lang="id_ID">Bello 10 Nero adalah versi modern dari desain Bello Nero, dengan fitur tambahan dan terintegrasi ke dalam kerangka Bello 10. Penghargaan penuh kepada pengembang asli Nessus, eQUIV, iCanuck.</description>
+    <description lang="it_IT">Bello 10 Nero è una versione modernizzata del design Bello Nero, con funzionalità aggiuntive e integrata nel framework Bello 10. Tutto il merito va agli sviluppatori originali Nessus, eQUIV, iCanuck.</description>
+    <description lang="ru_RU">Bello 10 Nero — это модернизированное возрождение дизайна Bello Nero с дополнительными функциями, интегрированное в платформу Bello 10. Полная благодарность оригинальным разработчикам Nessus, eQUIV, iCanuck.</description>
+    <description lang="zh_CN">Bello 10 Nero 是对 Bello Nero 设计的现代化复兴，加入了额外功能，并集成到 Bello 10 框架中。特别感谢原始开发者 Nessus、eQUIV、iCanuck。</description>
+    <description lang="el_GR">Το Bello 10 Nero είναι μια εκσυγχρονισμένη αναβίωση του σχεδιασμού Bello Nero, με πρόσθετες λειτουργίες και ενσωματωμένο στο πλαίσιο του Bello 10. Πλήρη εύσημα στους αρχικούς δημιουργούς Nessus, eQUIV, iCanuck.</description>
+    <disclaimer lang="en">Mouse, Games and touchscreen use are not supported with Bello 10 Nero</disclaimer>
+    <disclaimer lang="en_US">Mouse, Games and touchscreen use are not supported with Bello 10 Nero</disclaimer>
+	<disclaimer lang="es_ES">El uso de ratón, juegos y pantalla táctil no está soportado en Bello 10 Nero.</disclaimer>
+    <disclaimer lang="fr_FR">L’utilisation de la souris, des jeux et de l’écran tactile n’est pas prise en charge avec Bello 10 Nero.</disclaimer>
+    <disclaimer lang="id_ID">Penggunaan mouse, game, dan layar sentuh tidak didukung pada Bello 10 Nero.</disclaimer>
+    <disclaimer lang="it_IT">L’uso del mouse, dei giochi e del touchscreen non è supportato con Bello 10 Nero.</disclaimer>
+    <disclaimer lang="ru_RU">Использование мыши, игр и сенсорного экрана не поддерживается в Bello 10 Nero.</disclaimer>
+    <disclaimer lang="zh_CN">Bello 10 Nero 不支持鼠标、游戏和触摸屏的使用。</disclaimer>
+    <disclaimer lang="de_DE">Die Verwendung von Maus, Spielen und Touchscreen wird in Bello 10 Nero nicht unterstützt.</disclaimer>
+    <disclaimer lang="is_IS">Notkun músar, leikja og snertiskjás er ekki studd í Bello 10 Nero.</disclaimer>	
+  </extension>
+</addon>
+<addon id="skin.pm3-hd.extended" version="1.0.8" name="PM3-HD.Extended" provider-name="Knuckles">
+  <requires>
+    <import addon="xbmc.gui" version="5.17.0" />
+	<import addon="script.skinshortcuts" version="2.0.3" />
+  </requires>
+  <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1.0">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <assets>
+	    <icon>resources/icon.png</icon>
+	    <fanart>resources/fanart.jpg</fanart>
+	    <screenshot>_screenshots/screenshot01.jpg</screenshot>
+	    <screenshot>_screenshots/screenshot02.jpg</screenshot>
+	    <screenshot>_screenshots/screenshot03.jpg</screenshot>
+    </assets>
+	<summary lang="en">A Retro Skin For All Devices</summary>
+    <description lang="en">PM3-HD Updated To Omega And Reworked Throughout, Also Now Includes Main Menu And Submenu Shortcuts Options.
+Full Credit To Original Creaters Jezz_X,Team XBMC,TigerbotHesh,qqbenq</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="skin.simpletouchreloaded" version="1.7.5" name=" simple[COLORdeepskyblue]TOUCH[/COLOR]reloaded" provider-name="Knuckles">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.skinshortcuts" version="2.0.3" />
+		<import addon="plugin.video.themoviedb.helper" version="4.10.14" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A simple skin for TV &amp; mobile devices</summary>
+		<summary lang="en_US">A simple skin for TV &amp; mobile devices</summary>
+		<description lang="en_GB">The Simple Touch Skin Is A Mod Of The Unity Skin for Tv &amp;TouchScreen Devices.
+Updated And Completely Redesigned Throughout To Include More Added Features.
+Full Credit To Original Creaters SGK,Eddage,Bumpaneer</description>
+		<description lang="en_US">The Simple Touch Skin Is A Mod Of The Unity Skin for Tv &amp;TouchScreen Devices.
+Updated And Completely Redesigned Throughout To Include More Added Features.
+Full Credit To Original Creaters SGK,Eddage,Bumpaneer</description>
+		<license />
+		<forum />
+		<source />
+		<platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/Screenshot-1.jpg</screenshot>
+			<screenshot>resources/Screenshot-2.jpg</screenshot>
+			<screenshot>resources/Screenshot-3.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+</addons>

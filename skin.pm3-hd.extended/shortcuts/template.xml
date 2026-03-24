@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<submenu include="submenu">
+		<controls>
+			<control type="fixedlist" id="9901">
+			<include>Window_OpenClose_Home_Panel_Animation</include>
+				<skinshortcuts>visibility</skinshortcuts>
+				<posx>70</posx>
+				<posy>659</posy>
+				<width>637</width>
+				<height>82</height>
+				<onleft>9901</onleft>
+				<onright>9901</onright>
+				<onup>9000</onup>
+				<onback>9901</onback>
+				<itemgap>0</itemgap>
+				<focusposition>0</focusposition>
+				<movement>2</movement>
+				<scrolltime>200</scrolltime>
+				<orientation>Horizontal</orientation>
+				<itemlayout height="82" width="212">
+					 <control type="image">
+					    <left>0</left>
+						<top>0</top>
+						<width>26</width>
+						<height>26</height>
+						<texture>home-button.png</texture>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>0</top>
+						<width>165</width>
+						<height>82</height>
+						<align>left</align>
+						<aligny>left</aligny>
+						<font>font12</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="82" width="212">
+				      <control type="image">
+					    <left>0</left>
+						<top>0</top>
+						<width>26</width>
+						<height>26</height>
+						<texture>home-button.png</texture>
+					</control>
+					<control type="image">
+						<posx>3</posx>
+						<posy>3</posy>
+						<width>16</width>
+						<height>17</height>
+						<texture>home-button-focus.gif</texture>
+						<visible>Control.HasFocus(9901)</visible>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>0</top>
+						<width>165</width>
+						<height>82</height>
+						<font>font12</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>left</aligny>
+						<info>ListItem.Label</info>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>0</top>
+						<width>165</width>
+						<height>82</height>
+						<align>left</align>
+						<aligny>left</aligny>
+						<font>font12</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>!Control.HasFocus(9901)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<skinshortcuts>items</skinshortcuts>
+				</content>
+			</control>
+		</controls>
+	</submenu>
+</template>

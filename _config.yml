@@ -1,0 +1,4 @@
+include:
+  - addons.xml
+  - addons.xml.md5
+  - "*.zip"

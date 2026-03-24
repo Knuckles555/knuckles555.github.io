@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.knuckles555"
+       name="Knuckles Repository"
+       version="1.0.6"
+       provider-name="Knuckles">
+    <extension point="xbmc.addon.repository"
+               name="Knuckles Repository">
+        <dir>
+            <info compressed="false">https://knuckles555.github.io/addons.xml</info>
+            <datadir zip="true">https://knuckles555.github.io/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Knuckles Repository</summary>
+        <description lang="en_GB">A repository for Knuckles skins.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

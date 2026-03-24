@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="VideoCodecFlagging">
+		<control type="image">
+			<description>Video rez Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoResolution)</visible>
+		</control>
+		<control type="image">
+			<description>Video Codec Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.VideoCodec,flagging/video/,.png]</texture>
+			<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoCodec)</visible>
+		</control>
+		<control type="image">
+			<description>Video HDR Type Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.HdrType,flagging/video/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.HdrType)</visible>
+		</control>
+	</include>
+	<include name="AudioCodecFlagging">
+		<control type="image">
+			<description>Audio Codec Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.AudioCodec,flagging/audio/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec)</visible>
+		</control>
+		<control type="image">
+			<description>Audio Channels Image</description>
+			<width>45</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.AudioChannels,flagging/audio/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioChannels)</visible>
+		</control>
+	</include>
+	<include name="AspectCodecFlagging">
+		<control type="image">
+			<description>Aspectratio Image</description>
+			<width>60</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.VideoAspect,flagging/aspectratio/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoAspect)</visible>
+		</control>
+	</include>
+</includes>
