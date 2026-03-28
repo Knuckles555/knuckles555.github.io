@@ -7,6 +7,7 @@
                name="Knuckles Repository">
         <dir>
             <info compressed="false">https://knuckles555.github.io/addons.xml</info>
+            <checksum>https://knuckles555.github.io/addons.xml.md5</checksum>
             <datadir zip="true">https://knuckles555.github.io/zips/</datadir>
             <hashes>false</hashes>
         </dir>
