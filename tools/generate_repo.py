@@ -15,7 +15,7 @@ def clean():
         shutil.rmtree(ZIPS)
     ZIPS.mkdir(parents=True, exist_ok=True)
     # Remove old generated files from root
-    for f in ["addons.xml", "addons.xml.md5"]:
+    for f in ["addons.xml", "addons.xml.md5", "index.html"]:
         p = ROOT / f
         if p.exists():
             p.unlink()
@@ -89,6 +89,15 @@ def copy_repo_zip(repo_id: str, repo_version: str):
     repo_zip_src = ZIPS / repo_id / f"{repo_id}-{repo_version}.zip"
     repo_zip_dst = ROOT / f"{repo_id}-{repo_version}.zip"
     shutil.copy2(repo_zip_src, repo_zip_dst)
+
+    # Build index.html so Kodi can browse the HTTP source to find the zip
+    (ROOT / "index.html").write_text(
+        '<html><head><title>Index of /</title></head><body>'
+        '<h1>Index of /</h1><hr><pre>'
+        '<a href="{0}-{1}.zip">{0}-{1}.zip</a>'
+        '</pre><hr></body></html>'.format(repo_id, repo_version),
+        encoding="utf-8",
+    )
 
 def main():
     clean()
