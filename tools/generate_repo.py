@@ -62,6 +62,10 @@ def zip_addon(folder: Path, addon_id: str, version: str):
             src = folder / "resources" / asset
         if src.exists():
             shutil.copy2(src, zip_dir / asset)
+            # Also copy to resources/ subfolder to match addons.xml asset paths
+            res_dir = zip_dir / "resources"
+            res_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, res_dir / asset)
     # Build a directory index for this addon so Kodi can browse it
     build_dir_index(zip_dir)
     return zip_path
