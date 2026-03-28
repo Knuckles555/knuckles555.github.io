@@ -5,12 +5,9 @@
        provider-name="Knuckles">
     <extension point="xbmc.addon.repository"
                name="Knuckles Repository">
-        <dir>
-            <info compressed="false">https://knuckles555.github.io/addons.xml</info>
-            <checksum>https://knuckles555.github.io/addons.xml.md5</checksum>
-            <datadir zip="true">https://knuckles555.github.io/zips/</datadir>
-            <hashes>false</hashes>
-        </dir>
+        <info compressed="false">https://knuckles555.github.io/addons.xml</info>
+        <checksum>https://knuckles555.github.io/addons.xml.md5</checksum>
+        <datadir zip="true">https://knuckles555.github.io/zips/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Knuckles Repository</summary>
