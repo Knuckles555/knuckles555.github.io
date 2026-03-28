@@ -7,7 +7,6 @@
                name="Knuckles Repository">
         <dir minversion="0.0.0">
             <info compressed="false">https://knuckles555.github.io/addons.xml</info>
-            <checksum>https://knuckles555.github.io/addons.xml.md5</checksum>
             <datadir zip="true">https://knuckles555.github.io/zips/</datadir>
         </dir>
     </extension>
