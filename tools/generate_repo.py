@@ -64,6 +64,12 @@ def zip_addon(folder: Path, addon_id: str, version: str):
             res_dir = zip_dir / "resources"
             res_dir.mkdir(parents=True, exist_ok=True)
             shutil.copy2(src, res_dir / asset)
+    # Updated: Copy screenshot images so Kodi can display them in addon info
+    res_dir = zip_dir / "resources"
+    res_dir.mkdir(parents=True, exist_ok=True)
+    for src in (folder / "resources").glob("screenshot*"):
+        if src.is_file():
+            shutil.copy2(src, res_dir / src.name)
     return zip_path
 
 def build_addons_xml(entries):
