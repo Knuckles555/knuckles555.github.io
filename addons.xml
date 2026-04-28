@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.knuckles555" name="Knuckles Repository" version="1.0.9" provider-name="Knuckles">
+<addon id="repository.knuckles555" name="Knuckles Repository" version="1.0.10" provider-name="Knuckles">
     <extension point="xbmc.addon.repository" name="Knuckles Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/knuckles555/knuckles555.github.io/main/addons.xml</info>
